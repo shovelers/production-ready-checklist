@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "items": [
+        {
+          "title": "Define the responsibility of the service",
+          "done": false
+        },
+        {
+          "title": "The readme has dev environment setup section",
+          "done": false
+        }
+      ],
+      "title": "Good Readme",
+      "icon": ""
+    },
+    {
+      "items": [
+        {
+          "title": "The code has sufficient test coverage",
+          "done": false
+        },
+        {
+          "title": "The code is using a standard guideline",
+          "done": false
+        }
+      ],
+      "title": "Code Quality",
+      "icon": ""
+    },
+    {
+      "items": [
+        {
+          "title": "The code has sufficient test coverage",
+          "done": false
+        },
+        {
+          "title": "The code is using a standard guideline",
+          "done": false
+        }
+      ],
+      "title": "Awesome CI/CD",
+      "icon": ""
+    }
+  ]
+}
