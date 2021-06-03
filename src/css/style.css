@@ -28,6 +28,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .todo-list {
@@ -50,7 +51,7 @@ header {
     flex: 1;
 }
 
-.check-btn, .delete-btn{
+.check-btn{
     background: #ff6f47;
     color: white;
     border: none;

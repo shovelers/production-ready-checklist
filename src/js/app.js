@@ -1,7 +1,5 @@
 const todoInput = document.querySelector('.todo-input');
-const addTodoButton = document.querySelector('.add-todo-button');
 const todoList = document.querySelector('.todo-list');
-
 
 let createElements = (value) => {
     // create div container
@@ -23,27 +21,9 @@ let createElements = (value) => {
     todoDiv.appendChild(checkButton);
     todoDiv.appendChild(newTodo);
 
-    // // create button delete
-    // const deleteButton = document.createElement('button');
-    // deleteButton.classList.add('fas', 'fa-trash', 'delete-btn')
-    // todoDiv.appendChild(deleteButton);
 
     // make todoDiv child from todoList
     todoList.appendChild(todoDiv);
-}
-
-//functions
-function addTodo (e) {
-    // prevent form to submitting
-    e.preventDefault();
-    
-    createElements(todoInput.value);
-
-    // add item todo list to localstorage
-    saveTodoInLocalStorage(todoInput.value);
-
-    // clear Input todo after add todo item
-    todoInput.value = "";
 }
 
 // function check or delete what user click
@@ -56,34 +36,6 @@ let checkOrDelete = (e) => {
         const todo = item.parentElement;
         todo.classList.toggle('check');
     }
-
-    // delete item todo list
-    if (item.classList[2] === "delete-btn"){
-        const todo = item.parentElement;
-        removeTodoFromLocalStorage(todo);
-        todo.remove();
-    }
-}
-
-// check if item todo list is already exist in local storage or not
-let existOrNot = () => {
-
-    let items = checklistFromFile; 
-    // if (localStorage.getItem('items') === null) {
-    //     items = [];
-    // }else {
-    //     items = JSON.parse(localStorage.getItem('items'));
-    // }
-    return items
-}
-
-let saveTodoInLocalStorage = (item) => {
-    let items = existOrNot();
-
-    items.push(item);
-
-    console.log(items);
-    localStorage.setItem("items", JSON.stringify(items));
 }
 
 let createSection = (section) => {
@@ -97,7 +49,7 @@ let createSection = (section) => {
     })
 }
 
-let getTodoFromLocalStorage = () => {
+let getTodoFromFile = () => {
     fetch('./checklist.json').then(response => {
         return response.json();
     }).then(data => {
@@ -109,22 +61,7 @@ let getTodoFromLocalStorage = () => {
     
 }
 
-let removeTodoFromLocalStorage = (item) => {
-    
-    let items = existOrNot();
-
-    //  set index item want to delete
-    const itemIndex = item.children[0].innerText
-
-    // delete element from array with method splice, 1 is number how many element / item we delete
-    items.splice(items.indexOf(itemIndex), 1);
-
-    // refresh data in local storage
-    localStorage.setItem('items', JSON.stringify(items));
-}
-
-
 // Event Listener
-document.addEventListener('DOMContentLoaded', getTodoFromLocalStorage);
+document.addEventListener('DOMContentLoaded', getTodoFromFile);
 // addTodoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', checkOrDelete);
