@@ -4,11 +4,11 @@
       "items": [
         {
           "title": "Define the responsibility of the service",
-          "done": false
+          "description": "it is always a good idea to service"
         },
         {
           "title": "The readme has dev environment setup section",
-          "done": false
+          "description": "it is always a good idea to dev"
         }
       ],
       "title": "Good Readme",
@@ -18,11 +18,11 @@
       "items": [
         {
           "title": "The code has sufficient test coverage",
-          "done": false
+          "description": "it is always a good idea to"
         },
         {
           "title": "The code is using a standard guideline",
-          "done": false
+          "description": "it is always a good idea to"
         }
       ],
       "title": "Code Quality",
@@ -32,11 +32,11 @@
       "items": [
         {
           "title": "The code has sufficient test coverage",
-          "done": false
+          "description": "it is always a good idea to"
         },
         {
           "title": "The code is using a standard guideline",
-          "done": false
+          "description": "it is always a good idea to"
         }
       ],
       "title": "Awesome CI/CD",
