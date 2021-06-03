@@ -98,11 +98,15 @@ header {
     right: 0px;
     margin-bottom: 0px;
     text-align: center;
+    padding: 10px;
 }
 
 .logo {
-    padding: 10px;
+    display:inline-block;
+    vertical-align: middle;
+    max-width: 100px;
 }
+
 
 .social-share {
     text-align: center;
