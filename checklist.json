@@ -42,6 +42,116 @@
         }
       ],
       "title": "CI/CD"
+    },
+    {
+      "items": [
+        {
+          "title": "Checkin swagger/open api file",
+          "description": "TODO"
+        }
+      ],
+      "title": "API Docs"
+    },
+    {
+      "items": [
+        {
+          "title": "Publish business metrics",
+          "description": "TODO"
+        },
+        {
+          "title": "Publish system metrics",
+          "description": "TODO"
+        },
+        {
+          "title": "Publish API metrics",
+          "description": "TODO"
+        },
+        {
+          "title": "Publish application logs",
+          "description": "TODO"
+        },
+        {
+          "title": "Add alerts",
+          "description": "TODO"
+        },
+        {
+          "title": "Publish SLI/SLO",
+          "description": "TODO"
+        }
+      ],
+      "title": "Monitoring/Alerting"
+    },
+    {
+      "items": [
+        {
+          "title": "Timeouts",
+          "description": "TODO"
+        },
+        {
+          "title": "Retries",
+          "description": "TODO"
+        },
+        {
+          "title": "Circuit breakers",
+          "description": "TODO"
+        },
+        {
+          "title": "Rate limiting",
+          "description": "TODO"
+        },
+        {
+          "title": "Bulk heading",
+          "description": "TODO"
+        },
+        {
+          "title": "Database Components redundancies/replicas",
+          "description": "TODO"
+        }
+      ],
+      "title": "Introduce resiliency"
+    },
+    {
+      "items": [
+        {
+          "title": "Setup on-call",
+          "description": "TODO"
+        }
+      ],
+      "title": "On-call rotation"
+    },
+    {
+      "items": [
+        {
+          "title": "Non-root user",
+          "description": "TODO"
+        },
+        {
+          "title": "Non-sensitive logging",
+          "description": "TODO"
+        },
+        {
+          "title": "Secrets handling using systems like vault etc",
+          "description": "TODO"
+        }
+      ],
+      "title": "Security"
+    },
+    {
+      "items": [
+        {
+          "title": "Health check api",
+          "description": "TODO"
+        },
+        {
+          "title": "Graceful shutdown",
+          "description": "TODO"
+        },
+        {
+          "title": "Graceful shutdown",
+          "description": "TODO"
+        }
+      ],
+      "title": "Misc"
     }
   ]
 }
