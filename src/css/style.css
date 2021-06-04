@@ -35,7 +35,7 @@ header {
     min-width: 70%;
     list-style: none;
     margin-left: 0px !important;
-    padding-inline-start: 0px;
+    padding-inline-start: 0px !important;
 }
 
 @media screen and (max-width: 750px) {
