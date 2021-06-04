@@ -3,44 +3,45 @@
     {
       "items": [
         {
-          "title": "Define the responsibility of the service",
-          "description": "it is always a good idea to service"
+          "title": "Add Title & Description",
+          "description": "This is where you define what is the service/repo about, what are it's objective/aim etc. \nThis will be the first thing other developers going to read, so it is very important."
         },
         {
-          "title": "The readme has dev environment setup section",
-          "description": "it is always a good idea to dev"
+          "title": "Add local dev setup guide",
+          "description": "This is where you provide steps for dev setup.\n Any developer should be able to setup the service for development just by reading these steps. \n This will allow other developers to collaborate faster."
         }
       ],
-      "title": "Good Readme",
-      "icon": ""
+      "title": "Source code Readme"
     },
     {
       "items": [
         {
-          "title": "The code has sufficient test coverage",
-          "description": "it is always a good idea to"
+          "title": "Ensure your code has a good test coverage",
+          "description": "Having an automated way to test your code is a boon. It will help you save time and money by reducing the defect rate. \n Your test also act as the documentation tool and defines what the code is meant to do."
         },
         {
-          "title": "The code is using a standard guideline",
-          "description": "it is always a good idea to"
+          "title": "Setup linters for your code base",
+          "description": "Linters helps you in improving the code readability. It also makes your adher to a single standard."
         }
       ],
-      "title": "Code Quality",
-      "icon": ""
+      "title": "Code Quality"
     },
     {
       "items": [
         {
-          "title": "The code has sufficient test coverage",
-          "description": "it is always a good idea to"
+          "title": "Automate the deployments",
+          "description": "It is very important to deploy frequently in order to keep the deployment backlog small. \n This helps you in isolating faults which occurs during deployment. \n Also frequent deployments allow your to ship features/improvements to your customers faster."
         },
         {
-          "title": "The code is using a standard guideline",
-          "description": "it is always a good idea to"
+          "title": "Have a rollback plan",
+          "description": "Deployments break. You should have a strategy to rollback to its initial state when that happens."
+        },
+        {
+          "title": "Do canary deployments",
+          "description": "Canary deployments help you minimize the risk when your deployment breaks."
         }
       ],
-      "title": "Awesome CI/CD",
-      "icon": ""
+      "title": "CI/CD"
     }
   ]
 }
