@@ -41,6 +41,10 @@ header {
 @media screen and (max-width: 750px) {
     .todo-list {
       text-align: center;
+      min-width: 70%;
+      list-style: none;
+      margin-left: 0px !important;
+      padding-inline-start: 0px !important;
     }
 }
 
